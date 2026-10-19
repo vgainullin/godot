@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<class name="ProxyCloth" inherits="RefCounted" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../doc/class.xsd">
+	<brief_description>
+		Coarse XPBD cloth that refines a skinned target pose and drives a render mesh.
+	</brief_description>
+	<description>
+		Particles follow a skinned target (for example a spring-bone pose) within a per-particle max distance, with stretch and bend constraints, gravity, inertia and capsule collision, stepped with substeps at the rendered frame rate. [method write_mesh] writes the target-skinned render mesh plus the particles' offsets from their targets into a mesh surface created with [constant Mesh.ARRAY_FLAG_USE_DYNAMIC_UPDATE]. With [member blend] at 0 the render mesh equals the target-skinned mesh, so switching to and from bone skinning is seamless.
+	</description>
+	<tutorials>
+	</tutorials>
+</class>
